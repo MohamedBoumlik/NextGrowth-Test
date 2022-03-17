@@ -1,0 +1,92 @@
+*{
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table{
+    margin-top: 2%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;   
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+table{
+    width: 85%;
+    border-collapse: collapse;
+}
+
+tr{
+    height: 75px;
+    border-bottom: 0.5px solid rgb(182, 181, 181);
+}
+
+.thead th{
+    width: 200px;
+    margin:0 30px 0 30px;
+    font-weight: bolder;
+
+}
+
+.tbody td{
+    text-align: center;
+}
+
+td a{
+    display: flex;
+    justify-content: center;
+}
+
+td a img {
+    width: 20px;
+}
+
+tbody .etat {
+    background-color: aqua;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addUser{
+    margin-top: 1%;
+    height: 120px;
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.addUser button{
+    height: 40%;
+    width: 20%;
+    border-radius: 11px;
+    background-color: #FFAA0A;
+    margin-top: 35  px;
+    margin-right: 2%;
+    border: none;
+    font-weight: bold;
+    color: #806F4C;
+    font-size: large;
+}
+
+.form{
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}

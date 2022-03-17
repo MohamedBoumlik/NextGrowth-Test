@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+        <div class="table">
+            <table >
+            
+                <tr class="thead">
+                  <th>ID</th>
+                  <th>Date de création</th>
+                  <th>Etat</th>
+                  <th>Nom</th>
+                  <th>Prénom</th>
+                  <th>Nom d'utilisateur</th>
+                  <th>Matricule</th>
+                  <th>Action</th>
+                </tr>
+    
+                <tr class="tbody">
+                  <td>Alfreds Futterkiste</td>
+                  <td>Germanynjjjj</td>
+                  <td>
+                      <div class="etat">dddddd</div>
+                  </td>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                  <td>Alfreds Futterkiste</td>
+                  <td><a><img src="./icons/trash.svg" alt="trash_can"></a></td>
+                </tr>
+                <tr class="tbody">
+                  <td>Alfreds Futterkiste</td>
+                  <td>Germanynjjjj</td>
+                  <td>
+                      <div class="etat">dddddd</div>
+                  </td>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                  <td>Alfreds Futterkiste</td>
+                  <td><a><img src="./icons/trash.svg" alt="trash_can"></a></td>
+                </tr>
+    
+            </table>
+        </div>
+
+        <div class="addUser">
+            <button>Ajouter utilisateur</button>
+        </div>
+
+        <div class="form">
+            <div>
+                <h1>Ajout d'utilisateurs</h1>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom">
+                </div>
+                <div >
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom">
+                </div>
+                <div >
+                    <label for="etat">Etat</label>
+                    <input type="text" name="etat">
+                </div>
+                <div >
+                    <label for="user">Nom d'etulisateur</label>
+                    <input type="text" name="user">
+                </div>
+                <div >
+                    <label for="created">Date de création</label>
+                    <input type="text" name="created">
+                </div>
+                <div >
+                    <label for="matricule">Matricule</label>
+                    <input type="text" name="matricule">
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
