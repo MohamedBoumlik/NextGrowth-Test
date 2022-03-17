@@ -14,7 +14,7 @@
 
 .table{
     margin-top: 2%;
-    width: 85%;
+    width: 95%;
     display: flex;
     justify-content: center;
     padding: 5%;   
@@ -39,7 +39,7 @@ tr{
 
 }
 
-.tbody td{
+td{
     text-align: center;
 }
 
@@ -52,9 +52,27 @@ td a img {
     width: 20px;
 }
 
-tbody .etat {
-    background-color: aqua;
-    height: 35px;
+tbody .valide  {
+    background-color: #5BE881;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody .rejected   {
+    background-color: #FF0000;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody .on-validation  {
+    background-color: #FDB64D;
+    height: 45px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -76,17 +94,78 @@ tbody .etat {
     width: 20%;
     border-radius: 11px;
     background-color: #FFAA0A;
-    margin-top: 35  px;
+    margin-top: 35px;
     margin-right: 2%;
     border: none;
     font-weight: bold;
-    color: #806F4C;
     font-size: large;
+    color: #806F4C;
+    cursor: pointer;
+
 }
 
-.form{
-    width: 100%;
-    padding: 3%;
+/* hide modale */
+.invisible {
+    display: none;
+    backdrop-filter: blur(10px);
+}
+
+/* bluring the background */
+.blur {
+    filter: blur(10px);
+}
+
+.form {
+    margin: 0 10vw;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 15%;
+    width: 75%;
+    border-radius: 13px;
+}
+
+.form input {
+    width: 20vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(224, 224, 224);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+  
+.sousForm1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sousForm2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+    width: 100%;
+    padding: 10px 0;
+
+}
+.sousFormButton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+  
+.sousFormButton button {
+    background-color: #FFAA0A;
+    border-style: none;
+    padding: 13px 60px;
+    margin-right: 1vw;
+    border-radius: 10px;
+    color: #806F4C;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
 }
