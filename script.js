@@ -70,9 +70,8 @@ const fetch = () =>{
                         <td>${element.lastName}</td>
                         <td>${element.userName}</td>
                         <td>${element.registrationNumber}</td>
-                        <td><a><img src="./icons/trash.svg" alt="trash_can"></a></td>
+                        <td><img class='delete' src="./icons/trash.svg" alt="trash_can"></td>
                     </tr>`
-        // tbody.innerHTML = tbody.innerHTML+row ;
 
     });
 }
@@ -105,6 +104,22 @@ const post = () =>{
         form.classList.add("invisible");
         blur.classList.remove("blur");
     }
-    let tbody = document.querySelector('tbody');
     fetch();
 }
+
+// -------------- delete row --------------
+
+let tbody  = document.querySelector('tbody');
+tbody.addEventListener('click',(e)=>{
+
+    if(e.target.classList.contains('delete')){
+
+        if (window.confirm("Êtes-vous sûr de vouloir supprimer cet utilisateur ?")){
+    
+            e.target.parentElement.parentElement.remove();
+
+        }
+
+    }
+
+})

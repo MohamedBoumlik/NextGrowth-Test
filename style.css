@@ -49,12 +49,12 @@ td{
     text-align: center;
 }
 
-td a{
+/* td a{
     display: flex;
     justify-content: center;
-}
+} */
 
-td a img {
+td img {
     width: 20px;
 }
 
