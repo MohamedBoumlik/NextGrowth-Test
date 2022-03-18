@@ -15,23 +15,29 @@
     <!------------------------------------ Table ------------------------------------>
     
     <div class="container">
-
-        <table class="table">
-        
-            <tr class="thead">
-                <th>ID</th>
-                <th>Date de création</th>
-                <th>Etat</th>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Nom d'utilisateur</th>
-                <th>Matricule</th>
-                <th>Action</th>
-            </tr>
+        <div class="section">
             
-            <tbody></tbody>
+            <table class="table">
+                
+                <thead>
+                    <tr class="thead">
+                        <th>ID</th>
+                        <th>Date de création</th>
+                        <th>Etat</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Nom d'utilisateur</th>
+                        <th>Matricule</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+    
+            </table>
 
-        </table>
+        </div>
 
         <div class="addUser">
             <button onclick="show()">Ajouter utilisateur</button>
@@ -49,7 +55,7 @@
                 <h1>Ajout d'utilisateurs</h1>
             </div>
 
-            <div class="sousForm1">
+            <div class="row1">
                 <div>
                     <label>Nom</label>
                     <div>
@@ -62,15 +68,19 @@
                         <input type="text" name="Prenom" id="Prenom" />
                     </div>
                 </div>
-                <div>
+                <div class="etatContainer">
                     <span>Etat</span>
-                    <div>
-                        <input type="text" name="Etat" id="Etat" />
-                    </div>
+                    <select name="Etat" id="Etat">
+                        <option value="">choisir une état</option>
+                        <option value="Validé">Validé</option>
+                        <option value="En validation">En validation</option>
+                        <option value="Rejeté">Rejeté</option>
+                    </select>
+
                 </div>
             </div>
     
-            <div class="sousForm2">
+            <div class="row2">
                 <div>
                     <span>Nom d'utilisatuer</span>
                     <div>
@@ -85,7 +95,7 @@
                 </div>
             </div>
             
-            <div class="sousForm2">
+            <div class="row2">
                 <div>
                     <span>Matricule </span>
                     <div>
@@ -94,8 +104,8 @@
                 </div>
             </div>
 
-            <div class="sousFormButton">
-                <button onclick="save()">Enregistrer</button>
+            <div class="FormButton">
+                <button onclick="post()">Enregistrer</button>
             </div>
             
         </div>

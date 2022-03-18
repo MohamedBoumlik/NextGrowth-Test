@@ -12,14 +12,20 @@
     justify-content: center;
 }
 
-.table{
-    margin-top: 2%;
-    width: 95%;
-    display: flex;
+.section{
+    padding: 4%;
+    display: flex; 
     justify-content: center;
-    padding: 5%;   
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 87%;
+    margin-top: 2%;
+
+}
+
+.table{
+    width: 95%;
+    padding: 5%;   
 }
 
 table{
@@ -132,8 +138,21 @@ tbody .on-validation  {
     border: solid 1px rgb(224, 224, 224);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+.etatContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.form select {
+    width: 22vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(224, 224, 224);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
   
-.sousForm1 {
+.row1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,7 +160,7 @@ tbody .on-validation  {
     padding: 10px 0;
 }
 
-.sousForm2 {
+.row2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -150,7 +169,7 @@ tbody .on-validation  {
     padding: 10px 0;
 
 }
-.sousFormButton {
+.FormButton {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -158,7 +177,7 @@ tbody .on-validation  {
     padding: 10px 0;
 }
   
-.sousFormButton button {
+.FormButton button {
     background-color: #FFAA0A;
     border-style: none;
     padding: 13px 60px;

@@ -45,9 +45,9 @@ let users = [
 
 const fetch = () =>{
     let tbody = document.querySelector('tbody');
-    
+    tbody.innerHTML = '';
     users.forEach((element)=>{
-        let row =`  <tr>
+        tbody.innerHTML +=`  <tr>
                         <td>${element.id}</td>
                         <td>${new Date(element.createdDate).toLocaleDateString()}</td>
                         ${  element.status === "Validé"
@@ -72,7 +72,39 @@ const fetch = () =>{
                         <td>${element.registrationNumber}</td>
                         <td><a><img src="./icons/trash.svg" alt="trash_can"></a></td>
                     </tr>`
-        tbody.innerHTML = tbody.innerHTML+row ;
+        // tbody.innerHTML = tbody.innerHTML+row ;
 
-    })
+    });
+}
+
+// -------------- post data --------------
+
+const post = () =>{
+    let nom = document.getElementById('nom').value;
+    let prenom = document.getElementById('Prenom').value;
+    let etat = document.getElementById('Etat').value;
+    let nomUtilisateur = document.getElementById('nomUtilisateur').value;
+    let date = document.getElementById('date').value;
+    let matricule = document.getElementById('matricule').value;
+    let id = Math.floor((Math.random()*1000000)+1);
+
+    users.push({
+
+        id: id,
+        createdDate:date,
+        status:etat,
+        firstName: nom,
+        lastName: prenom,
+        userName: nomUtilisateur,
+        registrationNumber: matricule
+
+    });
+
+    if (form.classList.contains("form")) {
+        form.classList.remove("form");
+        form.classList.add("invisible");
+        blur.classList.remove("blur");
+    }
+    let tbody = document.querySelector('tbody');
+    fetch();
 }
